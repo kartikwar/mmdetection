@@ -2,10 +2,8 @@
   <img src="resources/Figure_1.png" width="1000"/>
 </div>
 
-**News**: We released the technical report on [ArXiv](https://arxiv.org/abs/1906.07155).
 
-
-## Introduction
+## Fashion Products Assignment
 
 MMDetection is an open source object detection toolbox based on PyTorch. It is
 a part of the OpenMMLab project developed by [Multimedia Laboratory, CUHK](http://mmlab.ie.cuhk.edu.hk/).
