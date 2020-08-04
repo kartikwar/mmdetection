@@ -34,11 +34,6 @@
 
    training script can be used to train on more data to increase the accuracy of detections
 
-## Requirements
-
-- [Python 3.5+](https://www.python.org/)
-- [PyTorch 1.0.0+](https://pytorch.org/)
-- [mmcv](https://github.com/open-mmlab/mmcv)
 
 ## License
 

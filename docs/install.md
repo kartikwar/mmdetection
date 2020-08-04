@@ -14,8 +14,8 @@
 a. Create a conda virtual environment and activate it.
 
 ```shell
-conda create -n open-mmlab python=3.7 -y
-conda activate open-mmlab
+conda create -n fashion-predictor python=3.7 -y
+conda activate fashion-predictor
 ```
 
 b. Install PyTorch and torchvision following the [official instructions](https://pytorch.org/), e.g.,
@@ -27,11 +27,11 @@ conda install pytorch torchvision -c pytorch
 Note: Make sure that your compilation CUDA version and runtime CUDA version match.
 You can check the supported CUDA version for precompiled packages on the [PyTorch website](https://pytorch.org/).
 
-`E.g.1` If you have CUDA 10.1 installed under `/usr/local/cuda` and would like to install
-PyTorch 1.5, you need to install the prebuilt PyTorch with CUDA 10.1.
+`E.g.1` If you have CUDA 10.0 installed under `/usr/local/cuda` and would like to install
+PyTorch 1.4, you need to install the prebuilt PyTorch with CUDA 10.0.
 
 ```python
-conda install pytorch cudatoolkit=10.1 torchvision -c pytorch
+conda install pytorch cudatoolkit=10.0 torchvision -c pytorch
 ```
 
 `E.g. 2` If you have CUDA 9.2 installed under `/usr/local/cuda` and would like to install
@@ -45,6 +45,14 @@ If you build PyTorch from source instead of installing the prebuilt pacakge,
 you can use more CUDA versions such as 9.0.
 
 c. Install mmcv, we recommend you to install the pre-build mmcv as below.
+
+directly run
+
+```shell
+pip install mmcv-full
+```
+
+Or you can run
 
 ```shell
 pip install mmcv-full==latest+torch1.5.0+cu101 -f https://openmmlab.oss-accelerate.aliyuncs.com/mmcv/dist/index.html
@@ -60,11 +68,6 @@ MMCV_WITH_OPS=1 pip install -e .  # package mmcv-full will be installed after th
 cd ..
 ```
 
-Or directly run
-
-```shell
-pip install mmcv-full
-```
 
 **Important**:
 
@@ -73,11 +76,6 @@ pip install mmcv-full
 | MMDetection version |    MMCV version     |
 |:-------------------:|:-------------------:|
 | master              | mmcv-full>=1.0.2    |
-| 2.3.0rc0            | mmcv-full>=1.0.2    |
-| 2.2.1               | mmcv==0.6.2         |
-| 2.2.0               | mmcv==0.6.2         |
-| 2.1.0               | mmcv>=0.5.9, <=0.6.1|
-| 2.0.0               | mmcv>=0.5.1, <=0.5.8|
 
 2. You need to run `pip unisntall mmcv` first if you have mmcv installed.
 If mmcv and mmcv-full are both installed, there will be `ModuleNotFoundError`.
@@ -140,20 +138,6 @@ However some functionality is gone in this mode:
 So if you try to run inference with a model containing deformable convolution you will get an error.
 Note: We set `use_torchvision=True` on-the-fly in CPU mode for `RoIPool` and `RoIAlign`
 
-### Another option: Docker Image
-
-We provide a [Dockerfile](https://github.com/open-mmlab/mmdetection/blob/master/docker/Dockerfile) to build an image.
-
-```shell
-# build an image with PyTorch 1.5, CUDA 10.1
-docker build -t mmdetection docker/
-```
-
-Run it with
-
-```shell
-docker run --gpus all --shm-size=8g -it -v {DATA_DIR}:/mmdetection/data mmdetection
-```
 
 ### A from-scratch setup script
 
