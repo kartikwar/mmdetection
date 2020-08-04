@@ -34,6 +34,11 @@
 
    training script can be used to train on more data to increase the accuracy of detections
 
+## Requirements
+
+- [Python 3.5+](https://www.python.org/)
+- [PyTorch 1.0.0+](https://pytorch.org/)
+- [mmcv](https://github.com/open-mmlab/mmcv)
 
 ## License
 
@@ -42,7 +47,7 @@ This project is released under the [Apache 2.0 license](LICENSE).
 
 ## Benchmark and model zoo
 
-Results and models are available in the [model zoo](docs/model_zoo.md).
+model is available at [model g-drive](https://drive.google.com/file/d/1fol3hgl2IHee2f4wOj_TfTQ5hPQfeTl0/view?usp=sharing).
 
 
 ## Installation
