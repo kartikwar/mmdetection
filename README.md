@@ -1,10 +1,9 @@
 <div align="center">
-  <img src="resources/Figure_1.png" width="600"/>
+  <img src="resources/Figure_1.png" width="1000"/>
 </div>
 
 **News**: We released the technical report on [ArXiv](https://arxiv.org/abs/1906.07155).
 
-Documentation: https://mmdetection.readthedocs.io/
 
 ## Introduction
 
