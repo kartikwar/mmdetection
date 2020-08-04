@@ -12,6 +12,8 @@
 
 7.) add test script to project.
 
+8.) add dataset preparation script to project.
+
 -------------------------------------------
 
 extras

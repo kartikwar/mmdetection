@@ -50,13 +50,18 @@ model is available at [model g-drive](https://drive.google.com/file/d/1fol3hgl2I
 Please refer to [install.md](docs/install.md) for installation and dataset preparation.
 
 
-## Getting Started
+## Usage
+python fashion_assignment.py --checkpoint checkpoints/fashion_product_detector --img images/04_6_flat.jpg
 
-Please see [getting_started.md](docs/getting_started.md) for the basic usage of MMDetection.
-We provide [colab tutorial](demo/MMDet_Tutorial.ipynb) for beginners.
-There are also tutorials for [finetuning models](docs/tutorials/finetune.md), [adding new dataset](docs/tutorials/new_dataset.md), [designing data pipeline](docs/tutorials/data_pipeline.md), and [adding new modules](docs/tutorials/new_modules.md).
+Pass the checkpoint path in the parameter(--checkpoint).
 
+The trained model is available at [model g-drive](https://drive.google.com/file/d/1fol3hgl2IHee2f4wOj_TfTQ5hPQfeTl0/view?usp=sharing) 
 
+Pass the input image path in the parameter(--img)
+
+**Output**
+
+Outputs an image with bounding boxes along with product type and color scheme.
 
 ## Contact
 
