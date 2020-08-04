@@ -1,32 +1,35 @@
-<div align="center">
-  <img src="resources/Figure_1.png" width="1000"/>
-</div>
-
-
-## Fashion Products Assignment
-
-Part 1 of the assignment requires to output type of the product as well as 
-bounding boxes around the product detected in the image.
-
-Part 2 is for extracting color scheme of the fashion products.
+## Fashion Products Tagger
 
 
 ![demo image](resources/Figure_1.png)
 
 ### Major features
 
-- **Modular Design**
+- **Output Product Type**
+    
+    Product type is identified along with confidence. For eg: top | 0.98
+    
+- **Bounding boxes are detected**
+    
+    Coordinates of the products are detected and displayed.
 
-  We decompose the detection framework into different components and one can easily construct a customized object detection framework by combining different modules.
+- **Color Scheme for Products**
 
-- **Support of multiple frameworks out of box**
-
-  The toolbox directly supports popular and contemporary detection frameworks, *e.g.* Faster RCNN, Mask RCNN, RetinaNet, etc.
-
-- **High efficiency**
-
-  All basic bbox and mask operations run on GPUs. The training speed is faster than or comparable to other codebases, including [Detectron2](https://github.com/facebookresearch/detectron2), [maskrcnn-benchmark](https://github.com/facebookresearch/maskrcnn-benchmark) and [SimpleDet](https://github.com/TuSimple/simpledet).
-
+    Color composition for products(combined and individually) is reported in a json format 
+    
+    {
+        
+        'top' : {
+            'grey' : 76.23,
+            'white' : 34.36
+        },
+        'overall' : {
+            'grey' : 33.34,
+            'black' : '23',
+            'white' : '44'
+        }
+    }
+    
 - **State of the art**
 
   The toolbox stems from the codebase developed by the *MMDet* team, who won [COCO Detection Challenge](http://cocodataset.org/#detection-leaderboard) in 2018, and we keep pushing it forward.
