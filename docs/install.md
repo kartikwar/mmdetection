@@ -139,27 +139,6 @@ So if you try to run inference with a model containing deformable convolution yo
 Note: We set `use_torchvision=True` on-the-fly in CPU mode for `RoIPool` and `RoIAlign`
 
 
-### A from-scratch setup script
-
-Here is a full script for setting up mmdetection with conda.
-
-```shell
-conda create -n open-mmlab python=3.7 -y
-conda activate open-mmlab
-
-# install latest pytorch prebuilt with the default prebuilt CUDA version (usually the latest)
-conda install -c pytorch pytorch torchvision -y
-
-# install the latest mmcv
-pip install mmcv-full
-
-# install mmdetection
-git clone https://github.com/open-mmlab/mmdetection.git
-cd mmdetection
-pip install -r requirements/build.txt
-pip install -v -e .
-```
-
 ### Using multiple MMDetection versions
 
 The train and test scripts already modify the `PYTHONPATH` to ensure the script use the MMDetection in the current directory.
