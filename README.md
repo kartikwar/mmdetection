@@ -51,7 +51,7 @@ Please refer to [install.md](docs/install.md) for installation.
 
 
 ## Usage
-python [fashion_assignment.py](./fashion_assignment.py) --checkpoint checkpoints/fashion_product_detector --img images/04_6_flat.jpg
+python [fashion_assignment.py](./fashion_assignment.py) --checkpoint checkpoints/fashion_product_detector.pth --img images/04_6_flat.jpg
 
 Pass the checkpoint path in the parameter(--checkpoint).
 
