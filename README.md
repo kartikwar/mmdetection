@@ -51,7 +51,7 @@ Please refer to [install.md](docs/install.md) for installation and dataset prepa
 
 
 ## Usage
-python fashion_assignment.py --checkpoint checkpoints/fashion_product_detector --img images/04_6_flat.jpg
+python [fashion_assignment.py](./fashion_assignment.py) --checkpoint checkpoints/fashion_product_detector --img images/04_6_flat.jpg
 
 Pass the checkpoint path in the parameter(--checkpoint).
 
@@ -62,6 +62,68 @@ Pass the input image path in the parameter(--img)
 **Output**
 
 Outputs an image with bounding boxes along with product type and color scheme.
+
+
+## Train
+
+The base model was provided in the original repo [openlab/mmdetection](https://github.com/open-mmlab/mmdetection).
+This forked repo provides a train script to finteune the model.
+
+To run the model simply run 
+
+python [train.py](./train.py).
+
+This script was run for 15 epochs on a dataset of DeepFashion. (Customized for this use case)
+
+The trained model is available at [model g-drive](https://drive.google.com/file/d/1fol3hgl2IHee2f4wOj_TfTQ5hPQfeTl0/view?usp=sharing) 
+
+## Dataset Preparation
+
+The original dataset can be found at [DeepFashion-InShop](http://mmlab.ie.cuhk.edu.hk/projects/DeepFashion/InShopRetrieval.html)  
+
+The original dataset had 15 categories:
+
+    01 : 'top',
+    02 : 'skirt',
+    03 : 'leggings',
+    04 : 'dress',
+    05 : 'outer',
+    06 : 'pants',
+    07 : 'bag',
+    08 : 'neckwear',
+    09 : 'headwear',
+    10 : 'eyeglass',
+    11 : 'belt',
+    12 : 'footwear',
+    13 : 'hair',
+    14 : 'skin',
+    15 : 'face'
+
+This dataset was customized to have only these 12 categories:
+
+    
+    01 : 'top',
+    02 : 'skirt',
+    03 : 'leggings',
+    04 : 'dress',
+    05 : 'outer',
+    06 : 'pants',
+    07 : 'bag',
+    08 : 'neckwear',
+    09 : 'headwear',
+    10 : 'eyeglass',
+    11 : 'belt',
+    12 : 'footwear'
+
+
+The dataset preparation script can be run using
+
+python [prepare_dataset](./prepare_dataset.py).
+
+However you should download the original dataset first and keep it in the correct directory structure
+
+
+
 
 ## Contact
 
