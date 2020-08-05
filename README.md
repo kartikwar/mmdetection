@@ -71,11 +71,18 @@ This forked repo provides a train script to finteune the model.
 
 To run the model simply run 
 
-python [train.py](./train.py).
+python [train.py](./train.py)
+
+Make sure to download dataset and model  first.
 
 This script was run for 15 epochs on a dataset of DeepFashion. (Customized for this use case)
 
 The trained model is available at [model g-drive](https://drive.google.com/file/d/1fol3hgl2IHee2f4wOj_TfTQ5hPQfeTl0/view?usp=sharing) 
+
+The train pipeline is illustrated here:
+
+![demo image](resources/data_pipeline.png)
+
 
 ## Dataset Preparation
 
@@ -118,12 +125,26 @@ This dataset was customized to have only these 12 categories:
 
 The dataset preparation script can be run using
 
-python [prepare_dataset](./prepare_dataset.py).
+python [prepare_dataset.py](./prepare_dataset.py).
 
 However you should download the original dataset first and keep it in the correct directory structure
 
 
 
+## Metrics
+mAP@0.5IOU for the test dataset was 0.719 (finetuned model)
+
+Other metrics for different areas of object (large, small, medium) and different IOU's are 
+also reported
+
+![demo image](resources/Metrics.png)
+
+
+These metrics were reported using the test.py script 
+
+python [test.py] (./test.py) --eval bbox
+
+Make sure to download dataset and model  first.
 
 ## Contact
 

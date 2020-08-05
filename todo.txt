@@ -1,18 +1,12 @@
-1.) Report test metrics in readme.
-
-2.) Update requirements.txt
+1.) Run torch vision and publish the image in Readme. 
 
 3)  Do a fresh installation to check if everything is working or not.
 
-4.) Write a write up to detail all the experiments performed for training
 
-5.) Upload model to google drive and link it in readme.
 
 6.) add images on which detection is giving good results
 
-7.) add test script to project.
 
-8.) add dataset preparation script to project.
 
 -------------------------------------------
 
