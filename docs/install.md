@@ -44,7 +44,7 @@ conda install pytorch=1.3.1 cudatoolkit=9.2 torchvision=0.4.2 -c pytorch
 If you build PyTorch from source instead of installing the prebuilt pacakge,
 you can use more CUDA versions such as 9.0.
 
-c. Install mmcv, we recommend you to install the pre-build mmcv as below.
+c. Install mmcv, we recommend you to install directly through pip.
 
 directly run
 
@@ -52,7 +52,7 @@ directly run
 pip install mmcv-full
 ```
 
-Or you can run
+Or you can install the pre-build mmcv as below
 
 ```shell
 pip install mmcv-full==latest+torch1.5.0+cu101 -f https://openmmlab.oss-accelerate.aliyuncs.com/mmcv/dist/index.html
@@ -80,10 +80,10 @@ cd ..
 2. You need to run `pip unisntall mmcv` first if you have mmcv installed.
 If mmcv and mmcv-full are both installed, there will be `ModuleNotFoundError`.
 
-d. Clone the mmdetection repository.
+d. Clone the forked mmdetection repository.
 
 ```shell
-git clone https://github.com/open-mmlab/mmdetection.git
+git clone https://github.com/kartikwar/mmdetection.git
 cd mmdetection
 ```
 
