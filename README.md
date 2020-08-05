@@ -51,13 +51,19 @@ Please refer to [install.md](docs/install.md) for installation.
 
 
 ## Usage
-python [fashion_assignment.py](./fashion_assignment.py) --checkpoint checkpoints/fashion_product_detector.pth --img images/04_6_flat.jpg
+python [fashion_assignment.py](./fashion_assignment.py) --checkpoint checkpoints/fashion_product_detector.pth 
 
 Pass the checkpoint path in the parameter(--checkpoint).
 
 The trained model is available at [model g-drive](https://drive.google.com/file/d/1fol3hgl2IHee2f4wOj_TfTQ5hPQfeTl0/view?usp=sharing) 
 
-Pass the input image path in the parameter(--img)
+If you want to input a separate image from default, pass the input image path in the parameter(--img)
+
+For eg: 
+
+python fashion_assignment.py --checkpoint checkpoints/fashion_product_detector.pth --img images/woman_dress.jpg
+
+
 
 **Output**
 
