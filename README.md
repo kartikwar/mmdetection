@@ -1,7 +1,7 @@
 ## Fashion Products Tagger
 
 
-![demo image](resources/result.jpg)
+![demo image](resources/demo_jeans_tee.jpg)
 
 ### Major features
 
@@ -123,7 +123,7 @@ This dataset was customized to have only these 12 categories:
     10 : 'eyeglass',
     11 : 'belt',
     12 : 'footwear'
-
+``
 
 The dataset preparation script can be run using
 

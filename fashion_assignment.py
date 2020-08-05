@@ -6,7 +6,7 @@ from mmdet.apis import inference_detector, init_detector, show_result_pyplot, ex
 
 def main():
     parser = ArgumentParser()
-    parser.add_argument('--img', help='Image file', default='images/06_2_side.jpg')
+    parser.add_argument('--img', help='Image file', default='images/woman_tee_half_jeans.jpg')
     parser.add_argument('--config', default='configs/fashion/mask_rcnn.py', help='Config file' )
     parser.add_argument('--checkpoint', default='checkpoints/fashion_product_detector.pth',  help='Checkpoint file')
     parser.add_argument(

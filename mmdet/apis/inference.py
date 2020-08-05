@@ -10,6 +10,7 @@ from mmcv.runner import load_checkpoint
 from mmdet.core import get_classes
 from mmdet.datasets.pipelines import Compose
 from mmdet.models import build_detector
+import os
 import  cv2
 
 
@@ -146,7 +147,7 @@ async def async_inference_detector(model, img):
 
 
 
-def show_result_pyplot(model, img, result, score_thr=0.3, fig_size=(15, 10)):
+def show_result_pyplot(model, img_path, result, score_thr=0.3, fig_size=(15, 10)):
     """Visualize the detection results on the image.
 
     Args:
@@ -159,12 +160,13 @@ def show_result_pyplot(model, img, result, score_thr=0.3, fig_size=(15, 10)):
     """
     if hasattr(model, 'module'):
         model = model.module
-    img, coordinates_list, label_txts = model.show_result(img, result, score_thr=score_thr, show=False)
+    img, coordinates_list, label_txts = model.show_result(img_path, result, score_thr=score_thr, show=False)
     # color_scheme = extract_color_scheme(img, coordinates_list)
     # color_scheme = scheme(img, coordinates_list)
     plt.figure(figsize=fig_size)
     plt.imshow(mmcv.bgr2rgb(img))
     plt.show()
     # img = mmcv.bgr2rgb(img)
-    # mmcv.imwrite(img, 'result.jpg')
+    save_path = os.path.join('results', img_path.split('/')[-1])
+    mmcv.imwrite(img, save_path)
     return img, coordinates_list, label_txts
