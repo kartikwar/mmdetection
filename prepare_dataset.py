@@ -94,8 +94,7 @@ def generate_dataset(json_path):
         category_id = annotation['category_id']
         if category_id not in ignore_categories:
             schema['annotations'].append(annotation)
-        else:
-            temp = 0
+
     
     output_dir = '/'.join(json_path.split('/')[:-1])
     

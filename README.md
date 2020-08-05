@@ -47,7 +47,7 @@ model is available at [model g-drive](https://drive.google.com/file/d/1fol3hgl2I
 
 ## Installation
 
-Please refer to [install.md](docs/install.md) for installation and dataset preparation.
+Please refer to [install.md](docs/install.md) for installation. 
 
 
 ## Usage
@@ -127,7 +127,7 @@ This dataset was customized to have only these 12 categories:
 
 The dataset preparation script can be run using
 
-python [prepare_dataset.py](./prepare_dataset.py).
+python [prepare_dataset.py](./prepare_dataset.py)
 
 However you should download the original dataset first and keep it in the correct directory structure
 

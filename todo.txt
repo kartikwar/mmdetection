@@ -1,11 +1,12 @@
 
-3)  Do a fresh installation to check if everything is working or not.
+3.) do code review.
 
 1.) remove todo bros.
 
-2.) remove unwanted files.
+3)  Do a fresh installation to check if everything is working or not.
 
-3.) do code review.
+
+
 
 
 
