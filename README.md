@@ -1,7 +1,7 @@
 ## Fashion Products Tagger
 
 
-![demo image](resources/Figure_1.png)
+![demo image](resources/demo_jeans_tee.png)
 
 ### Major features
 
