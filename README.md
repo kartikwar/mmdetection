@@ -77,6 +77,8 @@ Make sure to download dataset and model  first.
 
 This script was run for 15 epochs on a dataset of DeepFashion. (Customized for this use case)
 
+![demo image](resources/training.png)
+
 The trained model is available at [model g-drive](https://drive.google.com/file/d/1fol3hgl2IHee2f4wOj_TfTQ5hPQfeTl0/view?usp=sharing) 
 
 The train pipeline is illustrated here:
