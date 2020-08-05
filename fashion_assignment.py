@@ -1,6 +1,6 @@
 from argparse import ArgumentParser
 
-from mmdet.apis import inference_detector, init_detector, show_result_pyplot, extract_color_scheme
+from mmdet.apis import inference_detector, init_detector, show_result_pyplot, ColorScheme
 
 
 
@@ -25,7 +25,7 @@ def main():
     print('products detected ', label_txts)
     
     #extract color scheme
-    color_scheme = extract_color_scheme(args.img, coordinates_list)
+    color_scheme = ColorScheme(args.img, coordinates_list).color_scheme
     print('color scheme is', color_scheme)
     # print(color_scheme)
 
