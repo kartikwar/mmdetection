@@ -34,7 +34,9 @@
 
    training script can be used to train on more data to increase the accuracy of detections
 
+- **Mask Rcnn Model**
 
+    mask rcnn model is used for training the dataset.
 ## License
 
 This project is released under the [Apache 2.0 license](LICENSE).
@@ -42,7 +44,7 @@ This project is released under the [Apache 2.0 license](LICENSE).
 
 ## Benchmark and model zoo
 
-model is available at [model g-drive](https://drive.google.com/file/d/1fol3hgl2IHee2f4wOj_TfTQ5hPQfeTl0/view?usp=sharing).
+The trained mask-rcnn model is available at [model g-drive](https://drive.google.com/file/d/1fol3hgl2IHee2f4wOj_TfTQ5hPQfeTl0/view?usp=sharing).
 
 
 ## Installation
@@ -55,7 +57,7 @@ python [fashion_assignment.py](./fashion_assignment.py) --checkpoint checkpoints
 
 Pass the checkpoint path in the parameter(--checkpoint).
 
-The trained model is available at [model g-drive](https://drive.google.com/file/d/1fol3hgl2IHee2f4wOj_TfTQ5hPQfeTl0/view?usp=sharing) 
+The trained mask-rcnn model is available at [model g-drive](https://drive.google.com/file/d/1fol3hgl2IHee2f4wOj_TfTQ5hPQfeTl0/view?usp=sharing) 
 
 If you want to input a separate image from default, pass the input image path in the parameter(--img)
 
